@@ -1,0 +1,49 @@
+{
+  "tables" : [
+    {
+      "id" : "GetPatientActiveDaysHours",
+      "alias" : "GetPatientActiveDaysHours",
+      "columns" : [
+        { "id" : "id", 					"alias" : "ID", 				"dataType" : "int"    },
+        { "id" : "orgName",     		"alias" : "OrgName",      		"dataType" : "string" },
+        { "id" : "patientID",  			"alias" : "PatientID",   		"dataType" : "string" },
+        { "id" : "userName",   			"alias" : "UserName",    		"dataType" : "string" },
+		{ "id" : "year",   				"alias" : "Year",    			"dataType" : "string" },
+		{ "id" : "month",   			"alias" : "Month",    			"dataType" : "string" },
+		{ "id" : "week",   				"alias" : "Week",    			"dataType" : "string" },
+		{ "id" : "activeDays",   		"alias" : "ActiveDays",    		"dataType" : "string" },
+		{ "id" : "activeTimeHrs",   	"alias" : "ActiveTimeHrs",    	"dataType" : "string" },
+		{ "id" : "activeTimeMin",   	"alias" : "ActiveTimeMin",    	"dataType" : "string" },
+		{ "id" : "score",   			"alias" : "Score",    			"dataType" : "string" },
+		{ "id" : "strength",   			"alias" : "Strength",    		"dataType" : "string" },
+		{ "id" : "coordination",   		"alias" : "Coordination",    	"dataType" : "string" },
+		{ "id" : "agility",   			"alias" : "Agility",    		"dataType" : "string" },
+		{ "id" : "numberOfTargets", 	"alias" : "NumberOfTargets",    "dataType" : "string" }
+      ]
+    },{
+      "id" : "GetPatientActiveTimeWithCount",
+      "alias" : "GetPatientActiveTimeWithCount",
+      "columns" : [        
+        { "id" : "id",     		"alias" : "ID",      		"dataType" : "int"    	},
+		{ "id" : "orgName",     "alias" : "OrgName",    	"dataType" : "string"   },
+		{ "id" : "userName",   	"alias" : "UserName",   	"dataType" : "string" 	},
+		{ "id" : "patientID",  	"alias" : "PatientID",  	"dataType" : "string" 	},
+        { "id" : "date",   		"alias" : "Date",    		"dataType" : "date" 	},
+        { "id" : "activeTime",  "alias" : "ActiveTime", 	"dataType" : "int" 		},
+        { "id" : "patientCnt",  "alias" : "PatientCnt", 	"dataType" : "int" 		}
+      ]
+    },{
+      "id" : "GetGamesPlayedTime",
+      "alias" : "GetGamesPlayedTime",
+      "columns" : [
+        { "id" : "id",     			"alias" : "ID",      		"dataType" : "int"    	},
+		{ "id" : "orgName",     	"alias" : "OrgName",    	"dataType" : "string"   },		
+        { "id" : "playDate",  		"alias" : "PlayDate",   	"dataType" : "date" 	},
+		{ "id" : "gameID",  		"alias" : "GameID",   		"dataType" : "int" 		},
+		{ "id" : "gameName",  		"alias" : "GameName",   	"dataType" : "string" 	},
+		{ "id" : "activeTimeM", 	"alias" : "ActiveTimeM",    "dataType" : "int" 		},
+		{ "id" : "activeTimeS", 	"alias" : "ActiveTimeS",    "dataType" : "int" 		}
+      ]
+    }
+  ]
+}
